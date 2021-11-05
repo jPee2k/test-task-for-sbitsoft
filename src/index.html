@@ -5,9 +5,228 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Yooosi</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="container__left">
+        <a href="#" class="logo header__logo"><img class="logo__img" src="https://via.placeholder.com/30" alt="company's logo"></a>
+        <div class="user-nav">
+          <button class="header__button user-nav__button" type="button"><span></span></button>
+          <ul class="user-nav__list">
+            <li class="user-nav__item"><a class="user-nav__link" href="#">Account</a></li>
+            <li class="user-nav__item"><a class="user-nav__link" href="#">My subscriptions</a></li>
+            <li class="user-nav__item"><a class="user-nav__link" href="#">History</a></li>
+            <li class="user-nav__item"><a class="user-nav__link user-nav__link--log-out" href="#">Log out</a></li>
+          </ul>
+        </div>
+        <div class="favorites">
+          <button class="header__button favorites__button button--like" type="button"></button>
+          <ul class="favorites__list">
+            <li class="favorites__item">
+              <a class="favorites__link favorites__link--like">
+                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
+                Robert Davidson
+              </a>
+            </li>
+            <li class="favorites__item">
+              <a class="favorites__link favorites__link--like">
+                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
+                Roberta Davidson
+              </a>
+            </li>
+            <li class="favorites__item">
+              <a class="favorites__link favorites__link">
+                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
+                Robert Davidson
+              </a>
+            <li class="favorites__item">
+              <a class="favorites__link favorites__link--dislike">
+                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
+                Roberta Davidson
+              </a>
+            </li>
+            <li class="favorites__item">
+              <a class="favorites__link favorites__link--like">
+                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
+                Robert Davidson
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="messages">
+          <button class="header__button messages__button"><span class="messages__counter">5</span></button>
+          <ul class="messages__list">
+            <li class="messages__item">
+              <a class="messages__link">
+                <img class="messages__img" src="https://via.placeholder.com/30" alt="user avatar">
+                <span class="messages__name">Robert Davidson</span>
+                <time class="messages__date" datetime="2019-10-31">31 October 2019</time>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+              </a>
+            </li>
+            <li class="messages__item">
+              <a class="messages__link messages__link--new">
+                <img class="messages__img" src="https://via.placeholder.com/30" alt="user avatar">
+                <span class="messages__name">Robert Davidson</span>
+                <time class="messages__date" datetime="2019-10-31">31 October 2019</time>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+              </a>
+            </li>
+            <li class="messages__item">
+              <a class="messages__link messages__link">
+                <img class="messages__img" src="https://via.placeholder.com/30" alt="user avatar">
+                <span class="messages__name">Robert Davidson</span>
+                <time class="messages__date" datetime="2019-10-31">31 October 2019</time>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+              </a>
+            </li>
+            <li class="messages__item">
+              <a class="messages__link messages__link--old">
+                <img class="messages__img" src="https://via.placeholder.com/30" alt="user avatar">
+                <span class="messages__name">Robert Davidson</span>
+                <time class="messages__date" datetime="2019-10-31">31 October 2019</time>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="search-form" action="" method="GET">
+        <input class="search-form__search" type="search" name="search" placeholder="Search...">
+        <button class="search-form__button header__button" type="submit"></button>
+      </form>
+
+      <div class="container__right">
+        <form class="language__form" action="" method="GET">
+          <select name="language" class="language">
+            <option class="language__item" value="Hebrew" selected>Hebrew</option>
+            <option class="language__item" value="English">English</option>
+          </select>
+        </form>
+
+        <button class="button" type="button">start broadcast</button>
+
+        <nav class="nav">
+          <button class="nav__toggle nav__toggle--active"><span></span></button>
+          <ul class="nav__main">
+            <li class="nav__item"><a href="#" class="nav__link">be-fan</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">live Yooosi</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Yooosi channels</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link--active">for streamers</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">broadcast schedule</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
+          </ul>
+
+          <div class="download">
+            <p class="download__title">download app</p>
+            <a class="download__item download__item--app-store" href="#" target="_blank" rel="nofollow" aria-label="Download on the App Store"></a>
+            <a class="download__item download__item--google-play" href="#" target="_blank" rel="nofollow" aria-label="Get it on Google Play"></a>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Yooosi - streaming platform</h1>
+
+    <section class="slider">
+      <h2 class="visually-hidden">Online streams</h2>
+
+      <div class="container">
+        <div class="slider__preview poster">
+          <div class="poster__content">
+            <p class="poster__title"></p>
+            <p class="poster__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet consectetur dicta dolore illo ipsam iste, laudantium magnam minima obcaecati placeat praesentium provident repudiandae tempora totam vero! Ab adipisci at debitis doloribus ducimus libero officiis reprehenderit?</p>
+          </div>
+          <div class="poster__nav" data-poster-id="1">
+            <button class="poster__button button" type="button">start watching</button>
+            <a class="poster__link" href="#">to authors page</a>
+            <button class="header__button button--like" type="button"></button>
+          </div>
+        </div>
+
+        <div class="slider__content">
+          <ul class="slider__list">
+            <li class="slider__item slider__item--active slider-item" id="1">
+              <header class="slider-item__header">
+                <button class="header__button button--like" type="button"></button>
+                <button class="button" type="button">start watching</button>
+              </header>
+              <footer class="slider-item__footer">
+                poster name
+              </footer>
+            </li>
+            <li class="slider__item slider-item" id="2">
+              <header class="slider-item__header">
+                <button class="header__button button--like" type="button"></button>
+                <button class="button" type="button">start watching</button>
+              </header>
+              <footer class="slider-item__footer">
+                poster name
+              </footer>
+            </li>
+            <li class="slider__item slider-item" id="3">
+              <header class="slider-item__header">
+                <button class="header__button button--like" type="button"></button>
+                <button class="button" type="button">start watching</button>
+              </header>
+              <footer class="slider-item__footer">
+                poster name
+              </footer>
+            </li>
+            <li class="slider__item slider-item" id="4">
+              <header class="slider-item__header">
+                <button class="header__button button--like" type="button"></button>
+                <button class="button" type="button">start watching</button>
+              </header>
+              <footer class="slider-item__footer">
+                poster name
+              </footer>
+            </li>
+            <li class="slider__item slider-item" id="5">
+              <header class="slider-item__header">
+                <button class="header__button button--like" type="button"></button>
+                <button class="button" type="button">start watching</button>
+              </header>
+              <footer class="slider-item__footer">
+                poster name
+              </footer>
+            </li>
+            <li class="slider__item slider-item" id="6">
+              <header class="slider-item__header">
+                <button class="header__button button--like" type="button"></button>
+                <button class="button" type="button">start watching</button>
+              </header>
+              <footer class="slider-item__footer">
+                poster name
+              </footer>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="socials">
+      <h2 class="visually-hidden">We are in social networks</h2>
+
+      <div class="container">
+        <p class="socials__title title-socials">
+          <span class="title-socials__prefix">Available now</span>
+          The Yooosi App
+        </p>
+        <ul class="socials__list">
+          <li class="socials__item"><a class="socials__link" href="#" target="_blank" rel="nofollow" aria-label="app store"></a></li>
+          <li class="socials__item"><a class="socials__link" href="#" target="_blank" rel="nofollow" aria-label="play market"></a></li>
+          <li class="socials__item"><a class="socials__link" href="#" target="_blank" rel="nofollow" aria-label="facebook"></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
