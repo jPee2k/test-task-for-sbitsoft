@@ -1,0 +1,55 @@
+.download {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+
+  width: 280px;
+  height: 85px;
+  margin-left: 2px;
+
+  margin-top: auto;
+}
+
+.download__title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #999aa5;
+
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.download__item {
+  width: 135px;
+  height: 40px;
+  flex-shrink: 1;
+
+  background-repeat: no-repeat;
+
+  &--app-store {
+    width: 121px;
+    background-image: url("../images/icons/img-app-store.png");
+  }
+
+  &--google-play {
+    background-image: url("../images/icons/img-play-store.png");
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 24px;
+  }
+}
+
+@media (max-width: $mobile) {
+  .download {
+    width: auto;
+  }
+
+  .download__item:not(:last-of-type) {
+    margin-right: 5vw;
+  }
+}

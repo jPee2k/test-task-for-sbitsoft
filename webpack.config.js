@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const pages = ['index.html'];
 const multipleHtmlPlugins = pages
@@ -68,6 +69,11 @@ module.exports = {
     ...multipleHtmlPlugins,
     new MiniCssExtractPlugin({
       filename: 'css/bundle.css',
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/images/slider/list/', to: 'images/.jpg/' },
+      ],
     }),
   ],
 };

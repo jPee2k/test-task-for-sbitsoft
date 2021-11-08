@@ -6,14 +6,17 @@
         content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Yooosi</title>
+<!--  TODO -> no-js-->
 </head>
 <body>
   <header class="header">
     <div class="container header__container">
       <div class="container__left">
-        <a href="#" class="logo header__logo"><img class="logo__img" src="https://via.placeholder.com/30" alt="company's logo"></a>
-        <div class="user-nav">
-          <button class="header__button user-nav__button" type="button"><span></span></button>
+        <a href="#" class="logo header__logo">
+          <img class="logo__img" width="121" height="23" src="images/svg/logo.svg" alt="company's logo">
+        </a>
+        <div class="user-nav header__user-nav"><!-- user-nav--shown -->
+          <button class="header__button user-nav__button" type="button" data-toggle="user-nav" aria-label="open menu" aria-expanded="false"><span></span></button>
           <ul class="user-nav__list">
             <li class="user-nav__item"><a class="user-nav__link" href="#">Account</a></li>
             <li class="user-nav__item"><a class="user-nav__link" href="#">My subscriptions</a></li>
@@ -21,73 +24,101 @@
             <li class="user-nav__item"><a class="user-nav__link user-nav__link--log-out" href="#">Log out</a></li>
           </ul>
         </div>
-        <div class="favorites">
-          <button class="header__button favorites__button button--like" type="button"></button>
+        <div class="favorites"><!-- favorites--shown -->
+          <button class="header__button favorites__button" type="button" data-toggle="favorites" aria-label="open menu" aria-expanded="false"></button>
           <ul class="favorites__list">
             <li class="favorites__item">
-              <a class="favorites__link favorites__link--like">
-                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
-                Robert Davidson
+              <a class="favorites__link favorites__link--like" href="#">
+                <div class="favorites__img-filter">
+                  <img class="favorites__img" height="50" width="50" src="images/avatars/img_1.png" alt="user avatar">
+                </div>
+                <span class="favorites__title">Robert Davidson</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 512 512">
+                  <use href="images/svg/heart-solid.svg#heart"></use>
+                </svg>
               </a>
             </li>
             <li class="favorites__item">
-              <a class="favorites__link favorites__link--like">
-                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
-                Roberta Davidson
+              <a class="favorites__link favorites__link--like" href="#">
+                <div class="favorites__img-filter">
+                  <img class="favorites__img" height="50" width="50" src="images/avatars/img_2.png" alt="user avatar">
+                </div>
+                <span class="favorites__title">Roberta Davidson</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 512 512">
+                  <use href="images/svg/heart-solid.svg#heart"></use>
+                </svg>
               </a>
             </li>
             <li class="favorites__item">
-              <a class="favorites__link favorites__link">
-                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
-                Robert Davidson
-              </a>
-            <li class="favorites__item">
-              <a class="favorites__link favorites__link--dislike">
-                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
-                Roberta Davidson
+              <a class="favorites__link" href="#">
+                <div class="favorites__img-filter">
+                  <img class="favorites__img" height="50" width="50" src="images/avatars/img_1.png" alt="user avatar">
+                </div>
+                <span class="favorites__title">Robert Davidson</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 512 512">
+                  <use href="images/svg/heart-regular.svg#heart"></use>
+                </svg>
               </a>
             </li>
             <li class="favorites__item">
-              <a class="favorites__link favorites__link--like">
-                <img class="favorites__img" src="https://via.placeholder.com/30" alt="user avatar">
-                Robert Davidson
+              <a class="favorites__link favorites__link--like" href="#">
+                <div class="favorites__img-filter">
+                  <img class="favorites__img" height="50" width="50" src="images/avatars/img_2.png" alt="user avatar">
+                </div>
+                <span class="favorites__title">Roberta Davidson</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 512 512">
+                  <use href="images/svg/heart-solid.svg#heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="favorites__item">
+              <a class="favorites__link favorites__link--like" href="#">
+                <div class="favorites__img-filter">
+                  <img class="favorites__img" height="50" width="50" src="images/avatars/img_1.png" alt="user avatar">
+                </div>
+                <span class="favorites__title">Robert Davidson</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 512 512">
+                  <use href="images/svg/heart-solid.svg#heart"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="messages">
-          <button class="header__button messages__button"><span class="messages__counter">5</span></button>
+        <div class="messages"><!-- messages--shown -->
+          <button class="header__button messages__button" type="button" data-toggle="messages" aria-label="open menu" aria-expanded="false">
+            <span class="messages__counter">5</span>
+          </button>
           <ul class="messages__list">
             <li class="messages__item">
-              <a class="messages__link">
-                <img class="messages__img" src="https://via.placeholder.com/30" alt="user avatar">
+              <a class="messages__link" href="#">
+                <img class="messages__img" src="images/avatars/img_1.png" alt="user avatar">
                 <span class="messages__name">Robert Davidson</span>
                 <time class="messages__date" datetime="2019-10-31">31 October 2019</time>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+                <p class="messages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
               </a>
             </li>
             <li class="messages__item">
-              <a class="messages__link messages__link--new">
-                <img class="messages__img" src="https://via.placeholder.com/30" alt="user avatar">
+              <a class="messages__link messages__link" href="#">
+                <img class="messages__img" src="images/avatars/img_1.png" alt="user avatar">
                 <span class="messages__name">Robert Davidson</span>
                 <time class="messages__date" datetime="2019-10-31">31 October 2019</time>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+                <p class="messages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
               </a>
             </li>
             <li class="messages__item">
-              <a class="messages__link messages__link">
-                <img class="messages__img" src="https://via.placeholder.com/30" alt="user avatar">
+              <a class="messages__link messages__link" href="#">
+                <img class="messages__img" src="images/avatars/img_1.png" alt="user avatar">
                 <span class="messages__name">Robert Davidson</span>
                 <time class="messages__date" datetime="2019-10-31">31 October 2019</time>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+                <p class="messages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
               </a>
             </li>
             <li class="messages__item">
-              <a class="messages__link messages__link--old">
-                <img class="messages__img" src="https://via.placeholder.com/30" alt="user avatar">
+              <a class="messages__link messages__link" href="#">
+                <img class="messages__img" src="images/avatars/img_1.png" alt="user avatar">
                 <span class="messages__name">Robert Davidson</span>
                 <time class="messages__date" datetime="2019-10-31">31 October 2019</time>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...
+                <p class="messages__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
               </a>
             </li>
           </ul>
@@ -95,118 +126,150 @@
       </div>
 
       <form class="search-form" action="" method="GET">
-        <input class="search-form__search" type="search" name="search" placeholder="Search...">
-        <button class="search-form__button header__button" type="submit"></button>
+        <input class="search-form__input" type="search" name="search" placeholder="Search..." autocomplete="off"
+               data-autocomplete="/autocomplete-search" data-autocomplete-name="streamer">
+        <button class="search-form__button header__button" type="submit" tabindex="-1"></button>
+        <ul class="search-form__list" data-autocomplete-name="streamer"><!-- autocomplete -->
+          <li hidden class="search-form__item" tabindex="0"><span class="search-form__match">Robert</span> Davidson</li>
+          <li hidden class="search-form__item" tabindex="0"><span class="search-form__match">Robert</span> Smith</li>
+          <li hidden class="search-form__item" tabindex="0"><span class="search-form__match">Robert</span> Doe</li>
+          <li hidden class="search-form__item" tabindex="0"><span class="search-form__match">Robert</span>a Hadson</li>
+          <li hidden class="search-form__item" tabindex="0"><span class="search-form__match">Robert</span>inia Devidson</li>
+        </ul>
       </form>
 
       <div class="container__right">
         <form class="language__form" action="" method="GET">
-          <select name="language" class="language">
-            <option class="language__item" value="Hebrew" selected>Hebrew</option>
-            <option class="language__item" value="English">English</option>
-          </select>
+          <!-- custom select -->
+          <div class="language">
+            <span class="language__current" tabindex="0">Hebrew</span>
+            <ul class="language__list">
+              <li class="language__item">
+                <input class="language__radio" type="radio" name="language" value="Hebrew" id="hebrew" checked>
+                <label class="language__label" for="hebrew">Hebrew</label>
+              </li>
+              <li class="language__item">
+                <input class="language__radio" type="radio" name="language" value="English" id="english">
+                <label class="language__label" for="english">English</label>
+              </li>
+            </ul>
+          </div>
         </form>
 
-        <button class="button" type="button">start broadcast</button>
+        <button class="button container-right__button" type="button">start broadcast</button>
+<!--        <button class="button button--simple container-right__button" type="button">log in</button>-->
 
-        <nav class="nav">
-          <button class="nav__toggle nav__toggle--active"><span></span></button>
-          <ul class="nav__main">
-            <li class="nav__item"><a href="#" class="nav__link">be-fan</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">live Yooosi</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Yooosi channels</a></li>
-            <li class="nav__item"><a href="#" class="nav__link nav__link--active">for streamers</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">broadcast schedule</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
-          </ul>
+        <nav class="nav"><!-- nav--shown -->
+          <button class="nav__toggle header__button" data-toggle="nav" aria-label="open menu" aria-expanded="false"><span></span></button>
+          <div class="nav__wrapper">
+            <ul class="nav__main-list">
+              <li class="nav__item"><a href="#" class="nav__link">be-fan</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">live Yooosi</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Yooosi channels</a></li>
+              <li class="nav__item"><a class="nav__link nav__link--active">for streamers</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">broadcast schedule</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">about us</a></li>
+            </ul>
 
-          <div class="download">
-            <p class="download__title">download app</p>
-            <a class="download__item download__item--app-store" href="#" target="_blank" rel="nofollow" aria-label="Download on the App Store"></a>
-            <a class="download__item download__item--google-play" href="#" target="_blank" rel="nofollow" aria-label="Get it on Google Play"></a>
+            <div class="download">
+              <p class="download__title">download app</p>
+              <a class="download__item download__item--app-store" href="#" target="_blank" rel="nofollow" aria-label="Download on the App Store"></a>
+              <a class="download__item download__item--google-play" href="#" target="_blank" rel="nofollow" aria-label="Get it on Google Play"></a>
+            </div>
           </div>
         </nav>
       </div>
-
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <h1 class="visually-hidden">Yooosi - streaming platform</h1>
 
     <section class="slider">
       <h2 class="visually-hidden">Online streams</h2>
 
-      <div class="container">
-        <div class="slider__preview poster">
+      <div class="slider__preview" data-active-slide="1">
+        <div class="container poster">
           <div class="poster__content">
-            <p class="poster__title"></p>
-            <p class="poster__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid amet consectetur dicta dolore illo ipsam iste, laudantium magnam minima obcaecati placeat praesentium provident repudiandae tempora totam vero! Ab adipisci at debitis doloribus ducimus libero officiis reprehenderit?</p>
+            <p class="poster__title">Poster name</p>
+            <p class="poster__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
           </div>
-          <div class="poster__nav" data-poster-id="1">
-            <button class="poster__button button" type="button">start watching</button>
-            <a class="poster__link" href="#">to authors page</a>
-            <button class="header__button button--like" type="button"></button>
+          <div class="poster__nav">
+            <button class="poster__button poster__button--mini button" type="button">start watching</button>
+            <a class="poster__link" href="#">to author's page</a>
+            <button class="header__button poster__button button--like" type="button" aria-label="like"></button><!-- button--heart -->
           </div>
         </div>
+      </div>
 
-        <div class="slider__content">
+      <div class="slider__content">
+        <div class="container">
           <ul class="slider__list">
-            <li class="slider__item slider__item--active slider-item" id="1">
+            <li class="slider__item slider__item--active slider-item" tabindex="0" data-slide-id="1">
               <header class="slider-item__header">
                 <button class="header__button button--like" type="button"></button>
                 <button class="button" type="button">start watching</button>
               </header>
+              <img class="slider__img" width="340" height="166" src="images/slider/list/img_1.jpg" alt="">
               <footer class="slider-item__footer">
-                poster name
+                <p class="slider-item__title">poster name</p>
               </footer>
             </li>
-            <li class="slider__item slider-item" id="2">
+            <li class="slider__item slider-item" tabindex="0" data-slide-id="2">
               <header class="slider-item__header">
-                <button class="header__button button--like" type="button"></button>
+                <button class="header__button button--heart" type="button"></button>
                 <button class="button" type="button">start watching</button>
               </header>
+              <img class="slider__img" width="340" height="220" src="images/slider/list/img_2.jpg" alt="">
               <footer class="slider-item__footer">
-                poster name
+                <p class="slider-item__title">poster name</p>
               </footer>
             </li>
-            <li class="slider__item slider-item" id="3">
+            <li class="slider__item slider-item" tabindex="0" data-slide-id="3">
               <header class="slider-item__header">
-                <button class="header__button button--like" type="button"></button>
+                <button class="header__button button--heart" type="button"></button>
                 <button class="button" type="button">start watching</button>
               </header>
+              <img class="slider__img" width="340" height="166" src="images/slider/list/img_3.jpg" alt="">
               <footer class="slider-item__footer">
-                poster name
+                <p class="slider-item__title">poster name</p>
               </footer>
             </li>
-            <li class="slider__item slider-item" id="4">
+            <li class="slider__item slider-item" tabindex="0" data-slide-id="4">
               <header class="slider-item__header">
-                <button class="header__button button--like" type="button"></button>
+                <button class="header__button button--heart" type="button"></button>
                 <button class="button" type="button">start watching</button>
               </header>
+              <img class="slider__img" width="340" height="166" src="images/slider/list/img_4.jpg" alt="">
               <footer class="slider-item__footer">
-                poster name
+                <p class="slider-item__title">poster name</p>
               </footer>
             </li>
-            <li class="slider__item slider-item" id="5">
+            <li class="slider__item slider-item" tabindex="0" data-slide-id="5">
               <header class="slider-item__header">
-                <button class="header__button button--like" type="button"></button>
+                <button class="header__button button--heart" type="button"></button>
                 <button class="button" type="button">start watching</button>
               </header>
+              <img class="slider__img" width="340" height="166" src="images/slider/list/img_4.jpg" alt="">
               <footer class="slider-item__footer">
-                poster name
+                <p class="slider-item__title">poster name</p>
               </footer>
             </li>
-            <li class="slider__item slider-item" id="6">
+            <li class="slider__item slider-item" tabindex="0" data-slide-id="6">
               <header class="slider-item__header">
                 <button class="header__button button--like" type="button"></button>
                 <button class="button" type="button">start watching</button>
               </header>
+              <img class="slider__img" width="340" height="166" src="images/slider/list/img_4.jpg" alt="">
               <footer class="slider-item__footer">
-                poster name
+                <p class="slider-item__title">poster name</p>
               </footer>
             </li>
           </ul>
+          <div class="slider__nav">
+            <button class="slider__button slider__button--prev" type="button" aria-label="scroll left"></button>
+            <button class="slider__button slider__button--next" type="button" aria-label="scroll right"></button>
+          </div>
         </div>
       </div>
     </section>
@@ -215,18 +278,29 @@
       <h2 class="visually-hidden">We are in social networks</h2>
 
       <div class="container">
-        <p class="socials__title title-socials">
-          <span class="title-socials__prefix">Available now</span>
-          The Yooosi App
-        </p>
+        <div class="socials__text-wrapper">
+          <p class="socials__title">Available now</p>
+          <p class="socials__text">The Yooosi App</p>
+        </div>
         <ul class="socials__list">
-          <li class="socials__item"><a class="socials__link" href="#" target="_blank" rel="nofollow" aria-label="app store"></a></li>
-          <li class="socials__item"><a class="socials__link" href="#" target="_blank" rel="nofollow" aria-label="play market"></a></li>
-          <li class="socials__item"><a class="socials__link" href="#" target="_blank" rel="nofollow" aria-label="facebook"></a></li>
+          <li class="socials__item"><a class="socials__link socials__link--app-store" href="https://apple.com/app-store/" target="_blank" rel="nofollow" aria-label="app store">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 384 512">
+              <use href="images/svg/apple.svg#apple"></use>
+            </svg>
+          </a></li>
+          <li class="socials__item"><a class="socials__link socials__link--play-market" href="https://play.google.com/store/" target="_blank" rel="nofollow" aria-label="play market">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="22" viewBox="0 0 576 512">
+              <use href="images/svg/android.svg#android"></use>
+            </svg>
+          </a></li>
+          <li class="socials__item"><a class="socials__link socials__link--facebook" href="https://facebook.com/" target="_blank" rel="nofollow" aria-label="facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21">
+              <use href="images/svg/icon_fb.svg#facebook"></use>
+            </svg>
+          </a></li>
         </ul>
       </div>
     </section>
   </main>
-
 </body>
 </html>

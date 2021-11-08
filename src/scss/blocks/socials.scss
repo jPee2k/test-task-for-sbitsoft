@@ -1,0 +1,117 @@
+.socials {
+  width: 100%;
+
+  background: url("../images/socials/bg_yooosi_app-min.jpg") no-repeat center,
+  linear-gradient(to left, transparent, $main-color);
+  background-size: cover;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    min-height: 266px;
+  }
+}
+
+.socials__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 272px;
+
+  margin-top: 5px;
+}
+
+.socials__item {
+  &:not(:last-of-type) .socials__link {
+    margin-right: 46px;
+  }
+}
+
+.socials__text-wrapper {
+  margin-right: 30px;
+  text-indent: 2px;
+  min-width: 360px;
+  max-width: 50%;
+
+  .socials__title {
+    color: #cbb8ea;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: initial;
+
+    margin: 0;
+  }
+
+  .socials__text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+
+    margin: 0;
+    margin-top: 16px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: $main-color;
+  color: white;
+
+  &:hover,
+  &:focus-visible {
+    background-color: #f2eef7;
+    color: black;
+  }
+}
+
+@media (max-width: $tablet) {
+  .socials > .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .socials__text-wrapper {
+    width: 100%;
+    text-align: center;
+    min-width: initial;
+    max-width: initial;
+    margin: 16px 0;
+  }
+
+  .socials__list {
+    justify-content: center;
+    width: 80%;
+  }
+
+  .socials__item {
+    align-self: center;
+  }
+
+  .socials__link {
+    margin: 10px !important;
+  }
+}
+
+@media (max-width: $mobile) {
+  .socials__text-wrapper {
+    .socials__text {
+      font-size: 26px;
+      margin-top: 10px;
+    }
+  }
+}
